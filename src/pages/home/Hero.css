@@ -1,0 +1,62 @@
+.Hero {
+    display: flex;
+    padding: 100px 50px;
+    gap: 100px;
+}
+
+.Hero h1 {
+    font-size: 60px;
+    line-height: 1.2;
+    height: 200px;
+}
+
+.Hero div {
+   display: flex;
+   flex-wrap: wrap;
+   margin-bottom: 100;
+}
+
+.Hero p{
+    color: rgb(54, 55, 55);
+    font-size: 16px;
+    height: 170px;
+    line-height: 25px;
+}
+.Hero img{
+    width: 475px;
+}
+
+.Hero button {
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
+    font-size: 16px;
+    border-radius: 12px;
+    padding: 12px;
+    width: 124px;
+    height: 50px;
+    border-style: none;
+}
+
+.Hero button:hover{
+  background-color: rgb(212, 1, 1);
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 900px) {
+    .Hero {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 40px;
+    }
+
+    .Hero h1 {
+        font-size: 40px;
+        height: 180px;
+    }
+
+    .Hero img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
