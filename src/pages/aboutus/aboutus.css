@@ -1,0 +1,27 @@
+.aboutus h1{
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+    color: aliceblue;
+    background-image: url('../../assets/images/gen/blue.jpg');
+    font-size: 50px;
+}
+
+.about-content {
+    padding: 120px;
+}
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header p{
+    font-size: 24px;
+    margin-left: 70px;
+    
+}
+.header .box{
+    width: 50px;
+    height: 100px;
+    background-color: rgb(9, 72, 87)
+}

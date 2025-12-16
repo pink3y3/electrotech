@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom'
 import logo from '../assets/images/gen/et-logo.png'
 export default function Footer(){
     return (
@@ -9,19 +10,19 @@ export default function Footer(){
             <nav>
                 <div>
                     <h3>Features</h3>
-                    <a href="#services">Services</a>
-                    <a href="#products">Products</a>
+                    <Link to='/services'>Services</Link>
+                    <Link to='/products'>Products</Link>
                 </div>
                 <div>
                     <h3>Learn More</h3>
-                    <a href="#aboutus">About Us</a>
-                    <a href="#vision">Vision</a>
-                    <a href="#clientele">Clientele</a>
+                    <Link to='/about'>About Us</Link>
+                    <Link to='/vision'>Vision</Link>
+                    <Link to='/clientele'>Clientele</Link>
                 </div>
                 <div>
                     <h3>Support</h3>
-                    <a href="#contact">Contact Us</a>
-                    <a href="#Feedback">Feedback</a>
+                    <Link to='/contact'>Contact Us</Link>
+                    <Link to='/feedback'>Feedback</Link>
                 </div>
             </nav>
         </footer>

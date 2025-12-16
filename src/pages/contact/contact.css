@@ -1,0 +1,52 @@
+.contact h1{
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 50px;
+    margin-top: 90px;
+}
+
+.contact img{
+    width: 32px;
+    height: 32px;
+    margin-top: 4px;
+}
+
+.contact a{
+    font-size: 16px;
+    text-decoration: inherit;
+    color: rgb(44, 77, 140);
+}
+
+.grid {
+    display: flex;
+    padding: 50px;
+    margin-left: 150px;
+    gap: 100px;
+    margin-bottom: 90px;
+}
+
+.contact p{
+    margin-bottom: 50px;
+}
+
+.contact h2{
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    background-color: rgba(219, 220, 220, 0.592);
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 700px;
+}
+
+.card-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+

@@ -1,0 +1,35 @@
+
+.Services {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 120px;
+    gap: 55px;
+}
+
+.Services p{
+    font-size: 18px;
+
+}
+.Services h1 {
+    font-size: 48px;
+    width: 2500px;
+}
+
+.Services h2 {
+    margin-bottom: 20px;
+}
+.Services .cards {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 30px;
+    background-image: url('../../assets/images/gen/cable.png');
+    gap: 33px;
+}
+
+.Services .c1,
+.Services .c2,
+.Services .c3{
+    background-color: rgba(142, 149, 149, 0.14);
+    border-radius: 16px;
+    padding: 25px;
+}

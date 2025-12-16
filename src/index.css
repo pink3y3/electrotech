@@ -22,11 +22,25 @@ body {
 }
 
 a{
-  color: #333;
   font-weight: 400;
-  text-decoration: none;
   padding: 20px;
-  font-size: 14px;
+  font-size: 18px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: #333;
+}
+
+.navbar a,
+.footer a,
+.navbar a:hover,
+.footer a:hover,
+.navbar a:visited,
+.footer a:visited {
+  text-decoration: none !important;
 }
 
 a:hover{
@@ -37,7 +51,7 @@ a:hover{
   justify-content: space-between;
   background-color: #ffffff;
   color: rgb(66, 66, 66);
-  padding: 30px;
+  padding: 70px;
 }
 
 .footer nav {
@@ -70,4 +84,17 @@ a:hover{
 
 .footer img{
   width: 150px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

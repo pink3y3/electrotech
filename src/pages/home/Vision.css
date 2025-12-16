@@ -1,0 +1,46 @@
+.Vision {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+    text-align: center;
+}
+
+.Vision h3{
+    font-size: 55px;
+}
+
+.Vision p {
+    font-size: 18px;
+    font-weight: 300;
+    height: 90px;
+}
+
+.Vision h5 {
+    font-size: 24px;
+    height: 70px;
+}
+
+.Vision .cards {
+    display: flex;
+    flex-direction: row;
+    column-gap: 80px;
+    margin-top: 90px;
+}
+
+.Vision .dot {
+    color: red;
+}
+
+
+.Vision .quality,
+.Vision .customer,
+.Vision .service {
+    background-color: rgba(142, 149, 149, 0.14);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+}
+

@@ -1,14 +1,17 @@
+import {Link} from 'react-router-dom'
 import logo from '../assets/images/gen/et-logo.png'
 export default function Navbar(){
     return (
         <header className="navbar">
-            <img src={logo} alt="ET Logo" />
+                <Link to="/home">
+                <img src={logo} alt="ET Logo" />
+                </Link>
             <nav>
-                <a href="#about">About Us</a>
-                <a href="#clientele">Clientele</a>
-                <a href="#services">Services</a>
-                <a href="#products">Products</a>
-                <a href="#contactus">Contact Us</a>
+                <Link to="/home">Home</Link>
+                <Link to="/about">About Us</Link>
+                <Link to="/clientele">Clientele</Link>
+                <Link to="/products">Products</Link>
+                <Link to="/contact">Contact Us</Link>
             </nav>
         </header>
     );

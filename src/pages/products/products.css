@@ -1,0 +1,8 @@
+.products h1{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+    color: aliceblue;
+    background-image: url('../../assets/images/gen/red.jpg');
+}
