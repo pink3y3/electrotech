@@ -1,9 +1,9 @@
 .aboutus h1{
     display: flex;
     justify-content: center;
-    padding: 90px;
+    padding: 200px;
     color: aliceblue;
-    background-image: url('../../assets/images/gen/blue.jpg');
+    background-image: url('../../assets/images/gen/data.png');
     font-size: 50px;
 }
 
@@ -20,8 +20,8 @@
     margin-left: 70px;
     
 }
-.header .box{
+.about-content .box{
     width: 50px;
     height: 100px;
-    background-color: rgb(9, 72, 87)
+    background-color: rgba(15, 15, 15, 0.733)
 }

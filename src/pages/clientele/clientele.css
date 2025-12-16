@@ -2,9 +2,9 @@
     font-size: 50px;
     display: flex;
     justify-content: center;
-    padding: 90px;
+    padding:200px;
     color: aliceblue;
-    background-image: url('../../assets/images/gen/green.jpg');
+    background-image: url('../../assets/images/gen/sean-pollock-PhYq704ffdA-unsplash.jpg');
 }
 
 .clientele-content {
@@ -20,8 +20,8 @@
     margin-left: 70px;
     
 }
-.header .box{
+.clientele-content .box{
     width: 50px;
     height: 100px;
-    background-color: rgb(120,152,76)
+    background-color: rgba(67, 151, 179, 0.495)
 }
