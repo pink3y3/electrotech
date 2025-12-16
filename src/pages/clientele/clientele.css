@@ -25,3 +25,24 @@
     height: 100px;
     background-color: rgba(67, 151, 179, 0.495)
 }
+.client-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.slide {
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logos img {
+  height: 50px; /* or whatever size fits */
+  object-fit: contain;
+}
+

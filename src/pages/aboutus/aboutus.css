@@ -25,3 +25,62 @@
     height: 100px;
     background-color: rgba(15, 15, 15, 0.733)
 }
+
+.counter-section h2 {
+    font-size: 48px;
+    margin-bottom: 70px;
+}
+
+.counter h3{
+    font-size: 50px;
+    margin-bottom: 15px;
+    width: 90px;
+}
+
+.counter-section{
+    display: flex;
+    padding: 120px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-row{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 190px;
+    width: max-content;
+    height: max-content;
+}
+
+.about-para {
+    display: flex;
+    flex-direction: row;
+    gap: 90px;
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+
+.about-para img {
+    height: 290px;
+    width: 2090px;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    padding: 90px;
+}
+
+.about-content h5 {
+    color: aliceblue;
+    font-size: 70px;
+    margin-bottom: 90px;
+}
+
+.team img{
+    width: 790px;
+    height: 490px;
+}
