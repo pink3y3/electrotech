@@ -2,7 +2,7 @@ import './products.css'
 import { useEffect,useRef } from 'react';
 import Typed from "typed.js"
 
-export default function About(){
+export default function Products(){
     const typedRef=useRef(null);
 
     useEffect(() =>

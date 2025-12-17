@@ -21,6 +21,18 @@ export default function Contact(){
 
     return () => typed.destroy();
   }, []);
+    useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      },
+      { threshold: 0.3 }
+    );
+  
+    document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+  }, []);
 
     return(
         <>
@@ -28,7 +40,7 @@ export default function Contact(){
             <h1 className>
                 <span ref={typedRef}></span>
             </h1>
-            <div className='grid'>
+            <div className='grid fade'>
                 <div className='info contact-card'>
                 <div className='card-row'>
                     <img src={L1} alt="location-pin"/>

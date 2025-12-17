@@ -3,6 +3,6 @@
     display: flex;
     justify-content: center;
     padding: 200px;
-    color: aliceblue;
-    background-image: url('../../assets/images/gen/patrick-tomasso-nWvWBV0sv04-unsplash.jpg');
+    color: rgb(255, 255, 255);
+    background-image: url('../../assets/images/gen/laptop.jpg');
 }

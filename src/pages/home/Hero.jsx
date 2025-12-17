@@ -21,8 +21,22 @@ export default function Hero() {
     return () => typed.destroy();
   }, []);
 
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    },
+    { threshold: 0.3 }
+  );
+
+  document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+}, []);
+
+
   return (
-    <div className='Hero'>
+    <div className='Hero fade'>
       <div className="hero-text">
         <h1>
           <span ref={typedRef}></span>

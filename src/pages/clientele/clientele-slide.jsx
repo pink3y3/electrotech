@@ -50,13 +50,26 @@ export default function Client(){
 
     },[]);
 
+      useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    },
+    { threshold: 0.3 }
+  );
+
+  document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+}, []);
+
     return(
         <main>
-            <div className='cont'>
+            <div className='cont fade'>
                 <Swiper 
                 modules={[Pagination]}
                 grabCursor
-                initialSlide={2}
+                initialSlide={0}
                 centeredSlides
                 slidesPerView='auto'
                 speed={800}
@@ -73,7 +86,7 @@ export default function Client(){
                 >
                     {slideData.map((slide,index) => (
                         <SwiperSlide key={index}>
-                            <div className='swipe-slide'>
+                            <div className='swipe-slide fade'>
                                 <div className='title'>
                                 <h1>{slide.title}</h1>
                             </div>

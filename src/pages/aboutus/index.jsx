@@ -8,7 +8,6 @@ export default function About() {
   const counterSectionRef = useRef(null);
 
   useEffect(() => {
-    // Typed.js initialization
     const typed = new Typed(typedRef.current, {
       strings: [`About Us.`],
       typeSpeed: 60,
@@ -60,6 +59,19 @@ export default function About() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+   useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
+    },
+    { threshold: 0.3 }
+  );
+
+  document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+}, []);
+
   return (
     <>
       <section className='aboutus'>
@@ -67,7 +79,7 @@ export default function About() {
       </section>
 
       <section className='about-content'>
-        <div className='header'>
+        <div className='header fade'>
           <div className='box'></div>
           <p>
             For over 30 years, we have been delivering dependable technology solutions that empower homes, businesses, and institutions.
@@ -75,8 +87,8 @@ export default function About() {
         </div>
 
         <div className='counter-section' ref={counterSectionRef}>
-          <h2>We have served</h2>
-          <div className='counter-row'>
+          <h2 className='fade'>We have served</h2>
+          <div className='counter-row fade'>
             <div className='counter'>
               <h3><span data-count="2000">0</span>+</h3>
               <h4>IT customers</h4>
@@ -92,18 +104,18 @@ export default function About() {
           </div>
         </div>
 
-        <div className='about-para'>
+        <div className='about-para fade'>
           <p>
             Electro Tech has been a trusted name in computer sales, service, and telecommunication solutions since 1994. 
             We provide complete hardware and software diagnostics, repairs, and custom system upgrades—either on-site or at our service center—at highly competitive prices. 
             From office workstations to servers, we build configurations tailored to your needs.
           </p>
-          <img src={img1} alt="Company" />
+          <img src={img1} alt="Company"/>
         </div>
 
-        <div className='team'>
-          <h5>Our Team</h5>
-          <img src={img1} alt="Team" />
+        <div className='team fade'>
+          <h5 className='fade'>Our Team</h5>
+          <img src={img1} alt="Team" className='fade'/>
         </div>
       </section>
     </>

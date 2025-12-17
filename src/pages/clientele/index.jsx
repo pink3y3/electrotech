@@ -20,12 +20,26 @@ export default function Clientele(){
     }
 ,[]);
 
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        },
+        { threshold: 0.3 }
+      );
+    
+      document.querySelectorAll(".fade").forEach(el => observer.observe(el));
+    }, []);
+    
+
     return(
         <>
             <section className='clientele'>
                 <h1><span ref={typedRef}></span></h1>
             </section>
-            <section className='clientele-content'>
+            <section className='clientele-content fade'>
                 <div className='header'>
                     <div className='box'></div>
                     <p>Over the years, we've partnered with a diverse range of clients who trust us for dependable service, technical expertise, and ongoing support. Here are some of our major clientele :</p>
