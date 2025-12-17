@@ -1,0 +1,24 @@
+.cont {
+    display: flex;
+    text-align: center;
+    padding: 220px;
+    flex-direction: row;
+    margin-right: -300px;
+}
+
+.swipe-slide h1{
+    font-size: 60px;
+    margin-bottom: 90px;
+    color: rgb(0, 0, 0);
+    
+}   
+
+.swipe-slide img {
+    margin-bottom: 90px;
+}
+
+.swiper-pagination{
+    bottom: 0px !important;
+    margin-left: -120px;
+}
+

@@ -42,7 +42,7 @@
 }
 
 .logos img {
-  height: 50px; /* or whatever size fits */
+  height: 50px; 
   object-fit: contain;
 }
 
